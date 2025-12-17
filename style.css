@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* header */
+nav {
+    background-color: #152237;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1%;
+}
+
+#search-bar {
+    background-color: #152237;
+    background-image: url(img/icons/icone.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5rem;
+
+    border: solid 0.1em, #ffffff;
+    border-radius: 0.5rem;
+    color: #ffffff;
+
+    padding: 1rem;
+
+}
+
+#search-bar::placeholder {
+    color: #ffffff;
+}
+
+#logo {
+    width: 5rem;
+    height: 2rem;
+}
+
+
+#logo_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 25%;
+
+}
+
+#button_div {
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem;
+    width: 25%;
+}
+
+#search_div {
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+}
+
+nav input {
+    width: 30rem;
+    height: 2.5rem;
+}
+
+.login_button {
+    font-size: medium;
+    padding: 0.5%;
+    border-radius: 0.5rem;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+
+}
+
+.signin_button {
+    background: linear-gradient(to left, rgba(21, 183, 226, 1), rgba(68, 221, 138, 1));
+    font-size: medium;
+    padding: 0.5%;
+    border-radius: 0.5rem;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
+
+}
+
+
+
+/* banner */
+#banner {
+    background: linear-gradient(to left, rgba(21, 183, 226, 0.85), rgba(68, 221, 138, 0.85)), url(img/bg-header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #152237;
+    font-size: x-large;
+    font-weight: 900;
+    width: 100%;
+    height: 30rem;
+    gap: 0.5rem;
+}
+
+
+#banner button {
+    font-size: large;
+    padding: 0.5%;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem;
+}
+
+
+/* sections */
+
+/* Formations populaires */
+#formations_populaires {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: #ffffff;
+    color: #152237;
+}
+
+#formations_populaires h2 {
+    font-size: xx-large;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+#formations_populaires h3 {
+    padding: 0.25rem;
+}
+
+#formations_populaires p {
+    font-size: small;
+    padding: 0.25rem;
+}
+
+#formations_populaires button {
+    background-color: #152237;
+    color: #ffffff;
+    font-size: large;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem;
+    width: 20%;
+    align-self: center;
+}
+
+
+/* Formations recentes */
+#formations_recentes {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: #152237;
+}
+
+#formations_recentes h2 {
+    font-size: xx-large;
+    padding: 1rem;
+    padding-left: 2rem;
+    color: #ffffff;
+}
+
+#formations_recentes h3 {
+    padding: 0.25rem;
+    color: #ffffff;
+}
+
+#formations_recentes p {
+    font-size: small;
+    padding: 0.25rem;
+    color: #ffffff;
+}
+
+#formations_recentes button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: large;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem;
+    width: 20%;
+    align-self: center;
+}
+
+
+
+.product_list {
+    display: flex;
+    gap: 3%;
+}
+
+.product {
+    position: relative;
+    width: 25%;
+    font-size: large;
+    padding: 2rem;
+}
+
+.product_img {
+    width: 100%;
+    height: 65%;
+}
+
+.product_text {
+    padding: 0.5rem;
+}
+
+
+.star_img {
+    width: 35%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3rem;
+    bottom: 35%;
+
+    background-color: #152237;
+    color: #ffffff;
+    border-radius: 5rem;
+
+    font-weight: bold;
+    padding: 0.4rem .9rem;
+    gap: 0.5rem;
+}
+
+.price2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3rem;
+    bottom: 35%;
+
+    background-color: #ffffff;
+    color: #152237;
+    border-radius: 5rem;
+
+    font-weight: bold;
+    padding: 0.4rem .9rem;
+    gap: 0.5rem;
+}
+
+.old_price {
+    font-size: small;
+    font-weight: lighter;
+
+    text-decoration: line-through;
+}
+
+
+/* Avis clients */
+
+#avis_clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ffffff;
+    color: #152237;
+
+    font-size: large;
+}
+
+#avis_clients h2 {
+    padding: 2rem;
+    font-size: xx-large;
+}
+
+.split_half {
+    display: flex;
+    padding: 0 10rem 5rem 10rem;
+
+
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin: 2rem;
+    width: 50%;
+}
+
+.client_img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.client_star {
+    width: 15%;
+}
+
+.avis {
+    color: #000000;
+    padding-top: 0.5rem;
+    line-height: 2.2rem;
+}
+
+
+/* Avantages */
+
+#avantages {
+    background-color: #f5f5f5;
+    color: #152237;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 5rem;
+    font-size: larger;
+    gap: 5rem;
+
+}
+
+#avantages ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+#avantages li {
+    display: flex;
+    align-items: center;
+
+    font-size: x-large;
+    gap: 2rem;
+}
+
+#avantages div {
+    width: 50%;
+}
+
+#avantages_img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Become-author */
+
+#become-author {
+    background-color: #44dd8a;
+    color: #152237;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 5rem;
+    font-size: larger;
+    gap: 5rem;
+
+}
+
+#become-author h2 {
+    text-align: right;
+}
+
+#become-author ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+#become-author li {
+    display: flex;
+    align-items: center;
+
+    font-size: x-large;
+    gap: 2rem;
+
+}
+
+#become-author div {
+    width: 50%;
+    align-items: center;
+}
+
+#become-author_img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* About */
+
+#about {
+    color: #152237;
+    background-color: #152237 ;
+    display: flex;
+    justify-content: space-around;
+
+    font-size: larger;
+    gap: 5rem;
+
+}
+
+#about div {
+    width: 50%;
+    height: 100%;
+    padding: 10rem 6rem;
+}
+
+
+#about_div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    background-color: #f5f5f5;
+}
+
+#about_div_img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#about_div_img img {
+    width: 70%;
+    height: 70%;
+}
+
+
+
+#about p {
+    line-height: 2rem;
+}
+
+
+
+/* Contact */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    color: #152237;
+
+    font: larger;
+    width: 100%;
+    gap: 1rem;
+    padding: 3rem 0 5rem;
+}
+
+#contact hr {
+    width: 15%;
+    border: solid 0.1rem #44dd8a;
+}
+
+#contact_info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+#contact_input {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact_info input {
+    background-color: #152237;
+    width: 38rem;
+    height: 3rem;
+}
+
+#contact_message {
+
+    justify-items: center;
+    padding: 2rem 0;
+
+}
+
+#contact_message {
+    background-color: #152237;
+    width: 80rem;
+    height: 12.5rem;
+}
+
+#contact button {
+    background-color: #44dd8a;
+    color: #152237;
+    font-size: large;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem;
+    width: 20%;
+    align-self: center;
+}
+
+
+#contact input::placeholder {
+    color: #ffffff;
+}
+
+#contact textarea::placeholder {
+    color: #ffffff;
+
+}
+
+.contact_input_text {
+    color: #ffffff;
+    padding: 1rem;
+}
+
+
+
+/* Footer */
+
+#footer_line {
+    width: 100%;
+    height: 1.5rem;
+    background: linear-gradient(to left, rgba(21, 183, 226, 1), rgba(68, 221, 138, 1));
+    border: none;
+}
+
+#footer_line2 {
+    margin: 0 4rem;
+    border-color: #44dd8a;
+
+}
+
+
+
+footer {
+    background-color: #152237;
+    color: #ffffff;
+}
+
+#footer_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 4rem;
+}
+
+#footer_logo {
+    width: 10rem;
+    height: 4rem;
+}
+
+#footer_button {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0.2rem 0;
+}
+
+
+
+#footer_second {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem 4rem 8rem;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#social-media img {
+    width: 90%;
+    height: 90%;
+}
+
+
+.menu-bar {
+        display: none;
+    }
+
+footer h5 {
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+.mobile_show {
+    display: none;
+}
+
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 393px) {
+    .mobile_hidden {
+        display: none;
+    }
+
+    body {
+        width: fit-content;
+    }
+    
+    /* Nav */
+    nav {
+        padding: 2rem 2rem;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+
+    .menu-bar {
+        display: block;
+        width: 1.5rem;
+        height: 0.1em;
+        background-color: #ffffff;
+    }
+
+
+
+
+    /* Banner */
+    #banner {
+        background: linear-gradient(to left, rgba(21, 183, 226, 0.85), rgba(68, 221, 138, 0.85)), url(img/bg-header-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        gap: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+        font-size: large;
+        font-weight: 800;
+        font-size: x-large;
+    }
+
+    #banner button {
+        padding: 1rem;
+    }
+
+    #banner p {
+        font-size: xx-large;
+        text-align: center;
+
+    }
+
+
+
+    /* Formations */
+    #formations_populaires h2 {
+        text-align: center;
+    }
+
+    #formations_recentes h2 {
+        text-align: center;
+    }
+
+    .product_list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .product {
+        width: auto;
+        font-size: x-large;
+    }
+
+    #formations_populaires button {
+        width: 65%;
+    }
+
+    #formations_recentes button {
+        width: 65%;
+    }
+
+    .price {
+        bottom: 33%;
+    }
+
+    .price2 {
+        bottom: 33%;
+    }
+
+    /* Avis clients  */
+
+    .split_half {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0;
+        text-align: center;
+    }
+
+    .client {
+        align-items: center;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .client_img {
+        width: fit-content;
+
+    }
+
+    .client h3 {
+        font-size: xx-large;
+    }
+
+    .client_star {
+        width: fit-content;
+    }
+
+
+
+    /* Avantages */
+    #avantages {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 2rem 0;
+    }
+
+    #avantages h2 {
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    #avantages div {
+        width: 90%;
+    }
+
+    #avantages li {
+        align-items: flex-start;
+    }
+
+
+
+    /* Become author */
+    #become-author {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        padding: 2rem 0;
+        gap: 0rem;
+    }
+
+    #become-author h2 {
+        text-align: center;
+        font-size: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    #become-author h2::before {
+        content: "CÉER VOS FORMATIONS ";
+        font-size: 2.5rem;
+    }
+
+    #become-author div {
+        width: 90%;
+    }
+
+    #become-author li {
+        align-items: flex-start;
+    }
+
+
+
+    /* About */
+    #about {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #about div {
+        width: fit-content;
+        
+        padding: 2rem;
+    }
+
+    #about h2 {
+        text-align: center;
+    }
+
+    #about_div_img {   
+        background-color: #152237;
+        padding: 5rem;
+    }
+
+    #about_div_img img {
+        padding: 8rem 0.5rem;
+    }
+
+
+
+    /* Contact */
+    #contact {
+        gap: 0;
+        padding-bottom: 2rem;
+    }
+
+    #contact hr {
+        display: none;
+    }
+
+    #contact div {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    #contact input {
+        width: 230%;
+        height: 4rem;
+    }
+
+    #contact_input {
+        gap: 1rem;
+    }
+
+    #contact textarea {
+        background-color: #152237;
+        width: 230%;
+        padding: 0;
+    }
+
+    #contact_info {
+        gap: 1rem;
+    }
+
+    #contact button {
+        width: 90%;
+    }
+
+
+    #contact textarea::placeholder {
+        padding: 1rem 1rem;
+        font-size: large;
+    }
+
+    #contact input::placeholder {
+        font-size: large;
+
+    }
+
+    
+    
+
+    /* Footer */
+    #footer_main {
+        flex-direction: column;
+        padding: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    #footer_logo {
+        width: 100%;
+        height: 6rem;
+    }
+
+    #footer_main h4 {
+        padding: 3rem 0 0 0;
+    }
+
+    footer div {
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    footer li {
+        align-items: center;
+    }
+
+
+
+    #mention_legales li {
+        justify-content: center;
+    }
+
+
+
+    #footer_second {
+        display: none;
+    }
+
+
+}
