@@ -385,7 +385,7 @@ nav input {
 }
 
 #become-author h2 {
-    text-align: right;
+    text-align: left;
 }
 
 #become-author ul {
@@ -642,7 +642,7 @@ footer h5 {
 
 /* Responsive */
 .mobile_show {
-    display: none;
+    display: none ;
 }
 
 
@@ -655,6 +655,8 @@ footer h5 {
     .mobile_hidden {
         display: none;
     }
+
+    
 
     body {
         width: fit-content;
@@ -812,13 +814,19 @@ footer h5 {
         gap: 0rem;
     }
 
-    #become-author h2 {
-        text-align: center;
+    #title {
+        display: block;
         font-size: 0;
-        padding-bottom: 1.5rem;
     }
 
-    #become-author h2::before {
+    #become-author h2 {
+        text-align: right;
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+
+    #title::before {
         content: "CÉER VOS FORMATIONS ";
         font-size: 2.5rem;
     }
